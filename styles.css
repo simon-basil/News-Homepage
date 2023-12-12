@@ -28,7 +28,7 @@ a{
 }
 a:hover{
     color: hsl(5, 85%, 63%);
-    transition: all 0.5s ;
+    transition: all 0.5s ease-in;
 }
 
 .centered{
@@ -42,6 +42,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    gap: 50px;
 }
 
 .top{
@@ -49,7 +50,7 @@ a:hover{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap:30px;
+    gap:40px;
 }
 
 .main{
@@ -111,7 +112,7 @@ a:hover{
 .right{
     background-color: hsl(240, 100%, 5%);
     height: 500px;
-    width: 360px;
+    width: 340px;
     display: flex;
     flex-direction: column;
     padding: 30px 20px 0px 20px;
@@ -131,11 +132,16 @@ a:hover{
 }
 
 #change{
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
+    border-top: 1px solid hsl(236, 13%, 42%);
+    border-bottom: 1px solid hsl(236, 13%, 42%);
 }
 
-.subhead, .para{
+.para{
+    font-size: 15px;
+    color: hsl(233, 8%, 79%);
+}
+
+.subhead{
     color: white;
 }
 
@@ -146,10 +152,48 @@ a:hover{
 }
 
 .bottom{
-    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
+.three{
+    display: flex;
+    gap: 20px;
+    width: 350px;
+}
 
+.tripple{
+    height: 130px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.numbers{
+    color: hsl(233, 8%, 79%);
+}
+
+.descrip{
+    font-size: 16px;
+    color: hsl(240, 100%, 5%);
+    font-weight: bold;
+}
+
+.descrip:hover{
+    color: hsl(5, 85%, 63%);
+    transition: ease-in 0.3s;
+    cursor: pointer;
+}
+
+.subdescrip{
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+}
 
 
 @media(max-width: 450px){
